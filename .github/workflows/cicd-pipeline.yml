@@ -38,7 +38,8 @@ jobs:
   deploy-staging:
     runs-on: ubuntu-latest
     environment: Staging
-    needs: [deploy-development, test-artifact]
+    needs: [deploy-development, test-artifact] 
+    
     steps:
       - run: |
           echo "After development environment is deployed..."
